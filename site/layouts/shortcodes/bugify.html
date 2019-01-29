@@ -30,10 +30,8 @@
       <a href="https://openradar.appspot.com/{{ $bug_id }}">Apple Safari Radar #{{ $bug_id }}</a>
     {{- else if (eq $bug_cat "Normalize") -}}
       <a href="https://github.com/necolas/normalize.css/issues/{{ $bug_id }}">Normalize #{{ $bug_id }}</a>
-    {{- else -}}
-      <strong>parse error</strong>
     {{- end -}}
-    {{- if $separator -}}, {{- end -}}
+    {{- if $separator }}, {{ end -}}
 
   {{- else -}}
     {{- $word -}}
